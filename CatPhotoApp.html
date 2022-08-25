@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--for html indent by two spaces-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Click here to view more <a href="https://freecatphotoapp.com" 
+      target="_blank">cat photos</a>.</p>
+      <!--href is an attrubute that lets you choose the destination
+      for an anchor element. Pretty much the attribute determines
+      where the link will take you-->
+      <a href="https://freecatphotoapp.com"><img 
+      src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+      alt="A cute orange cat lying on its back."></a>
+      <!--img is a self closing tag, so it doesn't need a /img-->
+      <!--Right now don't worry about writing conventions-->
+      <!--an element is defined by a start tag, content, and an  
+      end tag-->
+      <!--Src is known as an attribute. An attribute is a word that
+      manipulates the behaviour of an element in html. What
+      happened in the tag img is that the attribute src draws a 
+      link from the internet holding an img-->
+      <!--alt is an attribute that loads the tex inside alt if 
+      the image fails to load-->
+      <!--Placing h2 and p in the area is called nesting, but I don't
+      know what that is just yet. Hopefully, I learn what nesting 
+      is later-->
+      <!--Main makes my code easier to read and helps with search
+      engine optimization-->
+      </section>
+
+      <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" 
+      alt="A slice of lasagna on a plate.">
+      <figcaption>Cats <em>love</em> lasagna</figcaption>
+      <!--em is an element that let's me emphasize words555-->
+      </figure>
+      <!--nesting the image with figure allows me to tie the image
+      with a caption underneath-->
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <!--ordered list that numbers instead of just having bullet points-->
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+      </figure>
+      </section>
+
+      
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      <!--Action attribute tells the website where data should be sent-->
+      <!--the input element let's me collect data in several ways.Just 
+      like the img element the input element in self closing-->
+      <!--The type attribute let's me decide what kind of input I want 
+      from the user-->
+      <!--the name aatribute allows me to give a name to the information
+      being recieved and stored for the action attribute. The name 
+      attribute also makes it so if I have multiple buttons for one prompt
+      I can make one button deselect when I choose another button-->
+      <!--A placeholder attribute let's me put a hint in empty boxes
+      so users know what information goes into the textbox-->
+      <!--The required attribute lets me prevent a user from submitting
+      a form if they are missing information from said form-->
+      <!--label elements are useful to tie the text of an input to the
+      input itself. For example using a label for the radio input let's
+      me click on the word indoor, and have the button activate-->
+      <!--an id attribute is used to identify specific html elements
+      each id value must be different to work as an identifier.The id
+      attribute lets me manipulate the original element within another
+      element, and acts as a unique identifier for elements-->
+      <!--fieldset is an element used to group related inputs or labels-->
+      <!--A legend element acts as a caption for my fieldset's content-->
+      <!--Checkbox, radio, and text are the current button types I have
+      worked with-->
+      <!--to associate a text with a button element you surround the 
+      text you want associated with a label element.You can put the 
+      whole button surrounded with the label or just the text-->
+      <!--Attributes don't have to be in any specific order-->
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+        
+  </body>
+</html>
